@@ -1,6 +1,5 @@
-// Copied from TAG WISE (tag-wise-fe/src/features/TaggingAssistant/TaggingAssistant.tsx).
-// Only the data import changed (local ./api instead of the TAG WISE axios client) —
-// everything else, including all styling, is unchanged so the UI renders identically.
+// The chat UI: input box, message history, and the fetch call to the RAG
+// backend (see ./api.ts).
 import { SendOutlined } from "@ant-design/icons";
 import { useEffect, useRef, useState } from "react";
 import toast from "react-hot-toast";

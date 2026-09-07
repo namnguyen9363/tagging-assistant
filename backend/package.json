@@ -2,7 +2,7 @@
   "name": "tagging-assistant-backend",
   "version": "1.0.0",
   "private": true,
-  "description": "Standalone RAG backend for the TAG WISE Tagging Assistant chat page",
+  "description": "RAG backend for the Tagging Assistant chat page",
   "main": "src/server.js",
   "scripts": {
     "start": "node src/server.js",

@@ -3,8 +3,8 @@ import { Toaster } from "react-hot-toast";
 import Login from "./auth/Login";
 import TaggingAssistant from "./TaggingAssistant";
 
-// Same gate condition as TAG WISE's HomePage.tsx (isAuthenticated && user) —
-// adapted to render inline instead of <Navigate> since this app has no router.
+// Gate condition: isAuthenticated && user, rendered inline instead of
+// <Navigate> since this app has no router.
 function AuthGate() {
   const { isLoading, isAuthenticated, user } = useAuth0();
 

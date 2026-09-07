@@ -1,8 +1,7 @@
-// Adapted from TAG WISE (tag-wise-fe/src/pages/LoginPage.tsx). Same auth logic
-// (useAuth0().loginWithRedirect()) — only the markup/styling changed, to this app's
-// own CSS-variable design system (see index.css) instead of TAG WISE's Tailwind
-// classes, and the appState.returnTo was dropped since this app has no router/routes
-// to return to (a single screen).
+// Same auth logic as a plain Auth0 login page (useAuth0().loginWithRedirect()),
+// styled with this app's own CSS-variable design system (see index.css).
+// appState.returnTo is skipped since this app has no router/routes to return
+// to (a single screen).
 import { useAuth0 } from "@auth0/auth0-react";
 
 export default function Login() {

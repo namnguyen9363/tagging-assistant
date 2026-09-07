@@ -1,13 +1,13 @@
 # Tagging Assistant
 
-Standalone deploy of the TAG WISE **Tagging Assistant** chat page — a
-keyword-search RAG chatbot over `knowledge_base.json`, answered by a
-Databricks Model Serving endpoint (Llama 3.3 70B). Fully independent from
-the main TAG WISE app: no shared router, layout, auth, or state.
+**Tagging Assistant** chat page — a keyword-search RAG chatbot over
+`knowledge_base.json`, answered by a Databricks Model Serving endpoint
+(Llama 3.3 70B). A fully independent app: no shared router, layout, auth,
+or state with anything else.
 
 ```
 tagging-assistant/
-├── frontend/   React + Vite + TS chat UI (same look as in TAG WISE)
+├── frontend/   React + Vite + TS chat UI
 ├── backend/    Express API — POST /api/rag/ask
 └── vercel.json Routes /api/* to the backend, everything else to the frontend build
 ```
@@ -52,8 +52,7 @@ page (`Auth0Provider` returns `null` when any of the 3 vars is missing).
 
 ## 2. Deploy to Vercel
 
-1. Push this `tagging-assistant/` folder as its **own** Git repo
-   (separate from the main TAG WISE repo):
+1. Push this `tagging-assistant/` folder as its own Git repo:
    ```bash
    cd tagging-assistant
    git init
